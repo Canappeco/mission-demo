@@ -32,4 +32,8 @@ public class MissionDao {
     public Mission findLastMission() {
         return missionMapper.findLastMission();
     }
+
+    public void insertMissionBatch(List<Mission> list) {
+        missionMapper.insertMissionBatch(list);
+    }
 }

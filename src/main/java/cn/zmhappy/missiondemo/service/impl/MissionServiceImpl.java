@@ -50,4 +50,10 @@ public class MissionServiceImpl implements MissionService{
     public Mission findLastMission() {
         return missionDao.findLastMission();
     }
+
+    @Override
+    public void insertMissionBatch(List<Mission> list) {
+        missionDao.insertMissionBatch(list);
+    }
+
 }

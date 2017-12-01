@@ -18,4 +18,6 @@ public interface MissionService {
     public void finishMission(Mission mission);
 
     public Mission findLastMission();
+
+    public void insertMissionBatch(List<Mission> list);
 }
